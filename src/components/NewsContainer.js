@@ -23,7 +23,7 @@ import News from './News';
 export default function NewsContainer(props){
     return (
         <div className='container'>
-        <h1 mb-3>Trending topics</h1>
+        <h1 className='mb-3'>Trending topics</h1>
         <div className='container row'>
         {props.data.articles.map((ele)=>{
             return (<News title={ele.title} time={ele.publishedAt} des={ele.description} url={ele.url} source = {ele.source.name} urlimg={ele.urlToImage}/>)
